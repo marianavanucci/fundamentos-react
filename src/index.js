@@ -7,7 +7,7 @@ import "./index.css";
 // importa o arquivo .css
 
 // Arqivo App importado mas parece q n existe? ahh tava App. App PONTO
-import App from "./components/basics/App";
+import App from "./App";
 
 // React renderiza o componente App na div com id root
 const root = ReactDOM.createRoot(document.getElementById("root"));

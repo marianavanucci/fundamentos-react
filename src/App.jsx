@@ -1,24 +1,11 @@
 import React from 'react'
 
-// ESTOU NA PASTA src/components/basics/
-// SE VC ESCREVER ASSIM de dentro desse arquivo ele vai procurar em:
+import Comp from "./components/basics/First";
 
-// ./components/basics/components/basics/First
-// import Comp from "./components/basics/First"; <- O SEU
-import Comp from "./First";
+import CompParametro from "./components/basics/ComParametro";
 
-//NO REACT o import da mesma pasta é ./NomeDoArquivo
-//Qdo vc coloca um import procurando um arquivo em ./AlgumaCoisa/OutraCoisa ele vai procurar
-//e essa pasta n existe, eeses 2 imports de Comp e CompParametro deviam estar ./First e ./Comparametro
-//pra n procurar em RAIZ/src/components/basics/
+import Card from './components/layout/Card';
 
-//ah tao sim. então é pq vc tá dando um endereço errado mesmo._
-//é como se vc tivesse dizendo assim:
-//eron em vez de procurar ComParametro no mesmo predio q ele a partir dde um endereço, sendo q ta no mesmo lugar q ele
-
-// import ComParametro from './First' -> PLIM
-// import CompParametro from "./components/basics/ComParametro"; <- O SEU
-import CompParametro from "./ComParametro";
 
 const tag = <strong>Olá React!!</strong>;
 
@@ -29,13 +16,26 @@ const tag = <strong>Olá React!!</strong>;
 function App () {
   return (
     <div id='app' >
-      <Comp></Comp>
-      <CompParametro
-        titulo="Segundo Componente"
-        subtitulo="Subtitulo do segundo componente"
-        nome="Pedro Silva"
-        nota={9.5}
-      ></CompParametro>
+        <h1>FUNDAMENTOS REACT</h1>
+        <Card
+        title= "Primeiro Componente"
+        >
+          <Comp></Comp>
+        </Card>
+        
+        <Card
+        title= "Componente com Paramêtro"
+        >
+                  <CompParametro
+          titulo="Segundo Componente"
+          subtitulo="Subtitulo do segundo componente"
+          nome="Pedro Silva"
+          nota={9.5}
+        ></CompParametro>
+        </Card>
+
+
+
     </div>
   )
 }
