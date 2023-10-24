@@ -5,31 +5,10 @@ import ReactDOM from "react-dom/client";
 // import ReactDOM faz com que o id= root funcione
 import "./index.css";
 // importa o arquivo .css
-import Comp from "./components/basics/First";
-import CompParametro from "./components/basics/ComParametro";
 
-import App from "./App";
-//pode deletar se quiser
-import reportWebVitals from "./reportWebVitals";
-//pode deletar se quiser
+// Arqivo App importado mas parece q n existe? ahh tava App. App PONTO
+import App from "./components/basics/App";
 
-const tag = <strong>Olá React!!</strong>;
-
+// React renderiza o componente App na div com id root
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  // <div> {tag} </div>
-  <div>
-    <Comp></Comp>
-    <CompParametro
-      titulo="Segundo Componente"
-      subtitulo="Subtitulo do segundo componente"
-      nome="Pedro Silva"
-      nota={9.5}
-    ></CompParametro>
-  </div>
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
-);
-
-reportWebVitals();
+root.render(<App />);
