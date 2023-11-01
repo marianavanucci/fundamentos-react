@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './App.css'
+
 import Comp from "./components/basics/First";
 
 import CompParametro from "./components/basics/ComParametro";
@@ -15,25 +17,27 @@ const tag = <strong>Olá React!!</strong>;
 
 function App () {
   return (
-    <div id='app' >
+    <div className='App'  id='app' >
         <h1>FUNDAMENTOS REACT</h1>
+
+        <div className='Cards'>
         <Card
-        title= "Primeiro Componente"
+        title= "Primeiro Componente" color="#FA6900"
         >
           <Comp></Comp>
         </Card>
         
         <Card
-        title= "Componente com Paramêtro"
+        title= "Componente com Paramêtro" color="FF00CC"
         >
                   <CompParametro
           titulo="Segundo Componente"
           subtitulo="Subtitulo do segundo componente"
           nome="Pedro Silva"
           nota={9.5}
-        ></CompParametro>
-        </Card>
-
+              ></CompParametro>
+          </Card>
+        </div>
 
 
     </div>

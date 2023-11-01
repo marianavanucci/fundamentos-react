@@ -1,9 +1,10 @@
 .Card{
-    background-color: red;
-    border: 3px solid grey;
+    border: 3px solid ;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
+    min-width: 500px;
+    max-width: 500px;
 }
 
 .Card .Title{
