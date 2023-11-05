@@ -7,6 +7,8 @@ import Comp from "./components/basics/First";
 import CompParametro from "./components/basics/ComParametro";
 
 import Card from './components/layout/Card';
+import Familia from './components/basics/Familia';
+import ListaAlunos from './components/repeticao/ListaAlunos';
 
 
 const tag = <strong>Olá React!!</strong>;
@@ -37,6 +39,20 @@ function App () {
           nota={9.5}
               ></CompParametro>
           </Card>
+
+          <Card
+        title= "Componente com Filhos" color="FF00DD"
+        >
+             <Familia sobrenome="Ferreira"></Familia>
+          </Card>
+
+          <Card
+        title= "Lista Repeticao" color="FF00DD"
+        >
+             <ListaAlunos></ListaAlunos>
+          </Card>
+
+
         </div>
 
 
