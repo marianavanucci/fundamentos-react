@@ -9,6 +9,7 @@ import CompParametro from "./components/basics/ComParametro";
 import Card from './components/layout/Card';
 import Familia from './components/basics/Familia';
 import ListaAlunos from './components/repeticao/ListaAlunos';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 
 
 const tag = <strong>Olá React!!</strong>;
@@ -52,8 +53,15 @@ function App () {
               <ListaAlunos></ListaAlunos>
           </Card>
 
+          <Card
+        title= "Repeticao" color="FF4C65"
+        >
+              <TabelaProdutos></TabelaProdutos>
+          </Card>
 
         </div>
+
+        
 
 
     </div>
