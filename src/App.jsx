@@ -43,13 +43,13 @@ function App () {
           <Card
         title= "Componente com Filhos" color="FF00DD"
         >
-             <Familia sobrenome="Ferreira"></Familia>
+              <Familia sobrenome="Ferreira"></Familia>
           </Card>
 
           <Card
-        title= "Lista Repeticao" color="FF00DD"
+        title= "Repeticao" color="FF4C65"
         >
-             <ListaAlunos></ListaAlunos>
+              <ListaAlunos></ListaAlunos>
           </Card>
 
 
