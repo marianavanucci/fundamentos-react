@@ -14,6 +14,7 @@ import ParOuImpar from './condicional/ParOuImpar';
 import UsuarioInfo from './condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Input from './components/form/Input';
 
 const tag = <strong>Olá React!!</strong>;
 
@@ -80,6 +81,12 @@ function App () {
         title= "Comunicacao Indireta" color="FF4C65"
         >
           <IndiretaPai></IndiretaPai>
+          </Card>
+
+          <Card
+        title= "Formulario" color="FF4C65"
+        >
+          <Input></Input>
           </Card>
 
         </div>
