@@ -12,6 +12,7 @@ import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './condicional/ParOuImpar';
 import UsuarioInfo from './condicional/UsuarioInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
 
 
 const tag = <strong>Olá React!!</strong>;
@@ -67,6 +68,12 @@ function App () {
               <ParOuImpar numero={20}></ParOuImpar>
               <UsuarioInfo usuario={{ nome: 'Fernando' }} ></UsuarioInfo>
               <UsuarioInfo usuario={{ email: 'fe@gmail.com' }} ></UsuarioInfo>
+          </Card>
+
+          <Card
+        title= "Comunicacao Direta" color="FF4C65"
+        >
+          <DiretaPai></DiretaPai>
           </Card>
 
         </div>
