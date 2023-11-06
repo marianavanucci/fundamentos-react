@@ -10,6 +10,7 @@ import Card from './components/layout/Card';
 import Familia from './components/basics/Familia';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import ParOuImpar from './condicional/ParOuImpar';
 
 
 const tag = <strong>Olá React!!</strong>;
@@ -57,6 +58,12 @@ function App () {
         title= "Repeticao" color="FF4C65"
         >
               <TabelaProdutos></TabelaProdutos>
+          </Card>
+
+          <Card
+        title= "Condicional" color="FF4C65"
+        >
+              <ParOuImpar numero={20}></ParOuImpar>
           </Card>
 
         </div>
