@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Indiretafilho from './Indiretafilho'
 
 
 
 export default props => {
+    // const [a,b] = [1, 2] (sendo 1 array e 2 funcao)
+    const [nome, setNome]= useState('?')
+    const [idade, setIdade]= useState(0)
+    const [nerd, setNerd]= useState(false)
 
-    let nome = '?'
-    let idade = 0
-    let nerd = false 
-
-    function fornecerInfo(nomeParam, idadeParam, nerdParam) {
-        nome = nomeParam
-        idade = idadeParam
-        nerd = nerdParam
-        console.log(nerdParam)
+    function fornecerInfo(nome, idade, nerd) {
+        setNome (nome)
+        setIdade(idade)
+        setNerd(nerd)
+        console.log(nome,idade,nerd)
     }
 
     return (
