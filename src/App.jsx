@@ -11,6 +11,7 @@ import Familia from './components/basics/Familia';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './condicional/ParOuImpar';
+import UsuarioInfo from './condicional/UsuarioInfo';
 
 
 const tag = <strong>Olá React!!</strong>;
@@ -64,6 +65,8 @@ function App () {
         title= "Condicional" color="FF4C65"
         >
               <ParOuImpar numero={20}></ParOuImpar>
+              <UsuarioInfo usuario={{ nome: 'Fernando' }} ></UsuarioInfo>
+              <UsuarioInfo usuario={{ email: 'fe@gmail.com' }} ></UsuarioInfo>
           </Card>
 
         </div>
