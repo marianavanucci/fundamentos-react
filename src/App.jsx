@@ -13,7 +13,7 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './condicional/ParOuImpar';
 import UsuarioInfo from './condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
-
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 
 const tag = <strong>Olá React!!</strong>;
 
@@ -74,6 +74,12 @@ function App () {
         title= "Comunicacao Direta" color="FF4C65"
         >
           <DiretaPai></DiretaPai>
+          </Card>
+
+          <Card
+        title= "Comunicacao Indireta" color="FF4C65"
+        >
+          <IndiretaPai></IndiretaPai>
           </Card>
 
         </div>
