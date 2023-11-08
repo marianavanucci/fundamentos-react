@@ -15,6 +15,7 @@ import UsuarioInfo from './condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/form/Input';
+import Contador from './components/contador/Contador';
 
 const tag = <strong>Olá React!!</strong>;
 
@@ -89,6 +90,11 @@ function App () {
           <Input></Input>
           </Card>
 
+          <Card
+        title= "Contador" color="FF4C65"
+        >
+          <Contador numeroInicial={10} ></Contador>
+          </Card>
         </div>
 
         
